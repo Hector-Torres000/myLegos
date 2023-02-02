@@ -1,0 +1,18 @@
+So the major proble about this is that
+you can't decide the starting and ending colors of
+the text. You kinda have to know about your colors
+and when I mean know, I mean you have to know about
+color saturation, hue, contrast, the "adding and
+subtracting" colors and knowing a lot of other stuff.
+
+I spend about 5+ hours trying to learn how to 
+find another way of doing this using purely CSS 
+and HTML but unfortunately. I felt like I wasted my
+day. 
+
+But with every "failure" there is a lesson to learn.
+I learned more about positioning and how absolute, 
+relative, and sticky values affect one another.
+
+But the most important lesson is that, if I don't
+get it and I spend an hour on it. MOVE ON!!!
