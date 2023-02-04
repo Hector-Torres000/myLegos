@@ -1,0 +1,8 @@
+The first link is using a background image(linear gradient)
+to appear like a underline. You will need to have that be sized
+to be small enough and then use repeat-X(or repeat-y) to strech the 
+entire link. Most importantly you will need to position that image at
+the desired side of the link.
+Obviously text-decoration set to none with the color of your choice.
+Most importantly is to have a transition, focusing on the background-size.
+On hover, that background size will grow that it reaches the entire link.
