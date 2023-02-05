@@ -1,3 +1,4 @@
+PART1::
 The first link is using a background image(linear gradient)
 to appear like a underline. You will need to have that be sized
 to be small enough and then use repeat-X(or repeat-y) to strech the 
@@ -6,3 +7,32 @@ the desired side of the link.
 Obviously text-decoration set to none with the color of your choice.
 Most importantly is to have a transition, focusing on the background-size.
 On hover, that background size will grow that it reaches the entire link.
+
+PART2::
+Here in part2 we see that we will be using the psuedo elements 'before',
+which is just making a psuedo-element that we can use. MDN/the article
+specifies that we should use the 'content' attribute to actually add
+something we can modify; in this case, we be modifying nothing but an
+empty string "". 
+We also like to mention that we need to set the anchor tag to be a
+postion of 'relative'. The reason behind this is because we give
+the psuedo-element an 'inset: 0' which is the shorthand version of
+'top', 'bottom', 'left', and 'right'. So an inset of 0 will be the 
+same as applying 0 to all those properties. THE psuedo element HAS 
+A POSTION OF ABSOLUTE.
+Next, we need to choose a 'backgroundground-color' of your choice
+with the addition that the psuedo-element is place behind it with 
+'z-index: -1'. 
+Finaly, we use the 'tramsform-origin' to specify where the tramsform
+should end with. Emphasizing on the end part because we also set 
+a 'tramsform: scaleX(0)' that hides the psuedo element. We add a the
+'transition: transform "time" ease-in-out'. 
+On the 'hover' on the psuedo-element, we can then add the 
+'transform: scaleX(1)' to specify to start revealing the psuedo-element
+with a 'tramsform-origin' to specify where the tramsform should start.
+
+PART3::
+Part3 is similar to Part2 with the difference that the size of the 
+psuedo-element is actually small but taking up 100% of the width 
+of the anchor tag. It is also positioned at the top left corner but
+since its 100% of the width, its just at the bottom.
