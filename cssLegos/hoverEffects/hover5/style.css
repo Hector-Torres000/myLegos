@@ -1,0 +1,21 @@
+p {
+  text-align: center;
+  border: solid 3px black;
+  font-size: 3rem;
+  margin-top: 10%;
+}
+
+.part1 a {
+  text-decoration: none;
+  color: black;
+  transition: color 1s ease-in-out;
+  position: relative;
+}
+.part1 a::before {
+  content: "Hover 5, This Time, It's About the Hover";
+  position: absolute;
+}
+
+.part1 a:hover {
+  color: red;
+}
