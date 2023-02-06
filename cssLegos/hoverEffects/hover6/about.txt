@@ -1,0 +1,27 @@
+PART1::
+Part1 consists of doing stuff from part7 hover effect. This 
+is where I have two psuedo-elements using '::after' and '::before'
+and have them stack on top of each other.
+Just like part7-hover, the anchor tag has a 'position: relative'
+with the psuedo-elements have a 'position-absolute'. One of them
+has an 'z-index: -1' to be placed bellow the other one. The 
+background psuedo-element is using a 'background-color' while
+the other one is using a 'background-image' of a 'linear-gradient'
+
+PART2::
+Part2 uses two 'background-images' consisting of 'linear-gradient'.
+Just like 'background-images' we can apply a 'background-repeat: none'
+to prevent the image taking up 100% of the heigth and width of the
+container. 
+I would like to point out that you can have more that one
+'background-image' by sepperating them by commas. ON the note
+of linear gradients; there is syntax to follow that it requires
+at least two declarations of colors to work. 
+For the transition affect, you need both to be placed at the bottom
+but only having one have a 'width: 100%', both 'heigth' properties
+should be the same. 
+NOTE that the 'background-position' is crucial to define where
+the animation takes place. 1st value is X axis, 2nd value is Y axis
+For the transition, use the 'transition: background-size' because
+that is property you want to change, make one background image small
+and other one big. DON'T FORGET THE 'transition' property.
