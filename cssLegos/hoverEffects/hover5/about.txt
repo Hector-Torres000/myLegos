@@ -1,0 +1,20 @@
+PART5
+
+So the part5 was a lot tricky and I still don't really understand it.
+The CSS tricks explains it really tricky and I prefer my explaination 
+of it. 
+The Hover effect on the text where it changes color from one side to
+the other, requires a 'background: linear-gradient()' with 90deg
+and a hard line cut of two colors at 50%. The trick here is that
+the 'linear-gradient' needs to be 200% in size. The reason behind this
+is because the 'color' property will have the value of 'transparent';
+meaning that the text color is the color of 'linear-gradient'. 
+HOWEVER, you would need the 'background-clip' property set to 
+'text' because we want that 'background: linear-gradient()' to be
+shown only on the text.
+Finally, we would need to add the 'transition' property to affect 'all'
+and the ':hover' selector will then have the 'background-position: 100%'.
+For some reason, this moves the 'linear-gradient' to the left...so yeah.
+
+The other part is like hover#6 and hover#7 of having a psuedo element
+appear at the bottom and increase its width.
