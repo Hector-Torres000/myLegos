@@ -1,0 +1,28 @@
+*::after,
+*::before,
+* {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+p {
+  font-size: 3rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 1s ease-in-out;
+  position: relative;
+}
+a::before {
+  content: 'Hover, Missing 3?';
+  transform: scaleX(0);
+  position: absolute;
+  color: red;
+  transform-origin: right;
+  transition: transform 1s ease-in-out;
+}
