@@ -1,0 +1,24 @@
+*::after,
+*::before,
+* {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+p {
+  text-align: center;
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+  background-image: linear-gradient(red, red);
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+  background-position: bottom 25% left 0;
+  transition: background-size 0.5s ease-in-out;
+}
+a:hover {
+  background-size: 100% 100%;
+}

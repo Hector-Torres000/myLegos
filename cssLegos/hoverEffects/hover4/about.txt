@@ -1,0 +1,14 @@
+PART 4 HOVER
+This hover affect is pretty simple compared to the other
+ones I have done. Though my version of it is different
+from that of CSS tricks.
+MY PART:
+My part consist of adding a 'linear-background' have it 
+have a size of 100% width and the height to be just
+generally small. Then use 'background-position' to 
+place it wherever you want. Use the 'transtion: background-size'
+and on 'hover' selector the 'background-size: 100% 100%'
+CSS PART: 
+They used the psuedo-element '::before' with 'position: absolute'
+'z-index: -1' with a height and width that matches my own part
+that does increase in size when on 'hover'.
