@@ -1,0 +1,24 @@
+PART2:
+This part was slightly tricky as it required the
+usage of a 'span' element surrounding the text of 
+the anchor element. This hover affect is basically
+have a psuedo-element to be hidden over on one side
+of the anchor tag and when hovered, it moves in place
+of the text and the original text moves to the side.
+
+First, we have to have that anchor element to have
+'overflow: hidden', 'position: relative', and 
+'display: inline-block'. I assume that the 'display'
+property is there to move items to the side without
+overlapping each other.
+
+The psuedo-element 'a::after' requires the 
+'content: "[text]"' to have the same text of the
+anchor tag. Then use the 'transform: translateX(100%)'
+to move that psuedo-element to the right. On 'hover'
+'transform: translateX(0)' to move it infront of the
+anchor text. 
+
+Finally, on the 'span' element needs 'display: inline-block'
+property and on 'hover' use 'transform: translateX(-100%)'
+to move it to the left.
