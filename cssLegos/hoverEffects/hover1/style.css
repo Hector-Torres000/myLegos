@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+p {
+  font-size: 4rem;
+  text-align: center;
+}
+.part1 a {
+  box-shadow: inset 0 0 0 0 blue;
+  color: blue;
+  transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+.part1 a:hover {
+  color: white;
+  box-shadow: inset 250px 0 0 0 blue;
+}
+
+.part2 a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.part2 a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.part2 a:hover {
+  color: white;
+}
+.part2 a:hover::after {
+  transform: translateX(0);
+}

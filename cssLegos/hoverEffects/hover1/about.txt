@@ -1,0 +1,23 @@
+HOVER1 
+
+part1****
+this one is based on the CSS tricks code, this one
+consisted of having a 'box-shadow: inset 0 0 0 0' with the 
+apporpriate color and a 'transition: all' because
+when hovered it changes the 'color' and 
+'box-shadow' properties.  
+The 'box-shadow: inset 300px 000 color' that first
+value is the X value and thus is not really dynamic;
+that's why i prefer my method.
+
+part2***
+part2 is similar to that of the other hover affects.
+This one needs the 'a' to have 'position: relative',
+'display: inline-block', and 'overflow: hidden'. 
+
+I will also need the psuedo element with 'position: absolute',
+'width: 100%', 'height: 100%', and a postition towards the left.
+This also requires the 'transform: translateX(-100%)' with an
+'z-index: -1'
+On hover, anchor element has 'color: white' and on the 
+psuedo-element 'transform: translateX(0)'
